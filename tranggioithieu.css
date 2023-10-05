@@ -1,0 +1,147 @@
+*{
+ box-sizing: border-box;
+ margin: 0; 
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
+}
+body {
+background: #fff;
+overflow-x: hidden;
+}
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 20px 100px;
+   background: rgb(24, 25, 26);
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+   height: 150px;
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+.img-logo{
+    position: absolute;
+    height: auto;
+    left: 0px;
+    width: 250px;
+    max-width: 250px;
+
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px ;
+}   
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: 0.5s;
+
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+main{
+    margin-top: 160px;
+    margin-left: 295px;
+    margin-right: 295px;
+}
+.sizeimg{
+    max-width: 100%;
+}
+.main-text h1{
+    text-align: center;
+    font-size: 35px;
+}
+p{
+    font-size: 15px;
+    font-weight: 100;    
+}
+.tenxe{
+    text-align: center;
+}
+/*footer*/
+footer{
+    margin-top: 10px;
+    background: #111;
+    height: auto;
+    width: 100vw;
+    font-family:"Open Sans";
+    padding-top: 40px;
+    color: #fff;
+    inline-size: none;
+}
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-content h2{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+}
+.socials a i{
+    font-size:  1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: gray;
+}
+.footer-bottom{
+    background: #000;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
